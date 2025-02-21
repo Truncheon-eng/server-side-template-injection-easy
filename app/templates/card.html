@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_1.css') }}">
+    <title>Карточка пользователя</title>
+</head>
+<body>
+    <div class="card-container">
+        <h3>Профиль пользователя</h3>
+        <p><strong>Имя:</strong> {{ firstName | safe }}</p>
+        <p><strong>Фамилия:</strong> {{ lastName | safe }}</p>
+        <p><strong>Пол:</strong> {{ gender | safe}}</p>
+        <p><strong>Возраст:</strong> {{ age | safe}}</p>
